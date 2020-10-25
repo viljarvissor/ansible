@@ -1,0 +1,54 @@
+
+---
+- hosts: webservers
+  tasks:
+    - name: debconf
+      debconf:
+        name=phpmyadmin
+        question='phpmyadmin/dbconfig-install'
+        value='true'
+        vtype='boolean'
+
+    - name: debconf
+      debconf:
+        name=phpmyadmin
+        question='phpmyadmin/app-password-confirm'
+        value='qwerty'
+        vtype='password'
+
+    - name: debconf
+      debconf:
+        name=phpmyadmin
+        question='phpmyadmin/mysql/admin-pass'
+        value='qwerty'
+        vtype='password'
+
+    - name: debconf
+      debconf:
+        name=phpmyadmin
+        question='phpmyadmin/mysql/app-pass'
+        value='qwerty'
+        vtype='password'
+
+    - name: debconf
+      debconf:
+        name=phpmyadmin
+        question='phpmyadmin/reconfigure-webserver'
+        value=''
+        vtype='multiselect'
+
+    - name: install phpmyadmin
+      apt:
+        pkg=phpmyadmin
+        state=present
+
+    - name: configure phpmyadmin website
+      file:
+        path=/var/www/phpmyadmin
+        src=/usr/share/phpmyadmin
+        state=link
+
+    - name: luba phpmyadmin ligipaes http
+      lineinfile:
+        dest=/etc/apache2/apache2.conf
+        line="include /etc/phpmyadmin/apache.conf"
