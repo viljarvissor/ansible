@@ -31,13 +31,12 @@ Root login fail asub kaustas /root/.my.cnf
 Instaleerbi phpmyadmini, mida on võimalk kätte saada lehelt: http://local-host/phpmyadmin
 
 ##### wordpress_paigaldus.sh
-Skript tõmbab uusima wordpressi versiooni, pakib selle lahti ja muudab wp-config-sample.php faili
-Tekkitab wordpressis uue kasutaja ja andmebaasi mida wordpress hakkab kasutama
+Tõmbab wordpress paketi ja pakib selle lahti. Järgmisena teeb wordpress andmebaasi ja muudab wordpress config faili selle alusel.
 ###### mysql server
  - andmebaas:                  "wordpress"
  - andmebaasi kasutaja:        "wordpressuser"
  - andmebaasi kasutaja parool: "qwerty"
 
 ### Ligipääsemine
-- Wordpressile saab ligi kirjutades url {serveri IP}/wordpress
-- Myphpadminile saab ligi kirjutades url {serveri IP}/myphpadmin
+- Wordpress asub lingil {serveri IP}/wordpress
+- Myphpadmin asub lingil {serveri IP}/myphpadmin
