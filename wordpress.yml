@@ -39,9 +39,3 @@
     lineinfile: dest=/var/www/html/wordpress/wp-config.php regexp="username_here" line="define( 'DB_USER', 'wpuser' );"
   - name: vahetame 'DB_NAME' Wordpress config failis
     lineinfile: dest=/var/www/html/wordpress/wp-config.php regexp="database_name_here" line="define( 'DB_NAME', 'wpdatabase' );"
-
-
-
-
-
-
