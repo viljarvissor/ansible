@@ -1,0 +1,12 @@
+
+---
+- hosts: webservers
+  tasks:
+  - name: Loome allalaadimiseks kataloogi
+    file:
+      path=/root/allalaadimised
+      owner=root
+      group=root
+      mode=0755
+      state=directory
+
