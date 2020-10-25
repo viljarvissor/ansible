@@ -24,8 +24,8 @@ Paigalda php7.0 ja sellega kaasa tulevad paketi moodulid
 MySQL serveri paigaldus ja root kasutaja loomine.
 Root login fail asub kaustas /root/.my.cnf
 ###### mysql server
-Kasutaja: root
-Kasutaja parool: qwerty
+ - Kasutaja: root
+ - Kasutaja parool: qwerty
 
 #####  pma.yml
 Instaleerbi phpmyadmini, mida on võimalk kätte saada lehelt: http://local-host/phpmyadmin
@@ -34,9 +34,9 @@ Instaleerbi phpmyadmini, mida on võimalk kätte saada lehelt: http://local-host
 Skript tõmbab uusima wordpressi versiooni, pakib selle lahti ja muudab wp-config-sample.php faili
 Tekkitab wordpressis uue kasutaja ja andmebaasi mida wordpress hakkab kasutama
 ###### mysql server
-andmebaas:                  "wordpress"
-andmebaasi kasutaja:        "wordpressuser"
-andmebaasi kasutaja parool: "qwerty"
+ - andmebaas:                  "wordpress"
+ - andmebaasi kasutaja:        "wordpressuser"
+ - andmebaasi kasutaja parool: "qwerty"
 
 ### Ligipääsemine
 - Wordpressile saab ligi kirjutades url {serveri IP}/wordpress
