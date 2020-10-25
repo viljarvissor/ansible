@@ -40,6 +40,3 @@ andmebaas:                  "wordpress"
 andmebaasi kasutaja:        "wordpressuser"
 andmebaasi kasutaja parool: "qwerty"
 ```
-### Ligipääsemine
-- Wordpress asub lingil http://local-host/wordpress
-- Myphpadmin asub lingil http://local-host/phpmyadmin
