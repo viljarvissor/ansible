@@ -1,6 +1,6 @@
 # ansibel
 ## Eesmärk
-Skript instaleerib wordpressi Apache2 peale ja lisab juurde weel mysql serveri ja phpmyadmini
+Skriptid instaleerivad wordpressi Apache2 peale ja lisab juurde weel mysql serveri ja phpmyadmini
 #### github paigaldus
 ##### Paigaldamine
 
