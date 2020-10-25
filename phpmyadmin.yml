@@ -2,7 +2,7 @@
 ---
 - hosts: webservers
   tasks:
-    - name: debconf
+    - name: debconf 
       debconf:
         name=phpmyadmin
         question='phpmyadmin/dbconfig-install'
