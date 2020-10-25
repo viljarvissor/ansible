@@ -29,7 +29,7 @@ Kasutaja: root
 Kasutaja parool: qwerty
 ```
 #####  pma.yml
-Instaleerbi phpmyadmini, mida on võimalk kätte saada lehelt: http://local-host/phpmyadmin
+Instaleerbi phpmyadmini
 
 ##### wordpress_paigaldus.sh
 Tõmbab wordpress paketi ja pakib selle lahti. Järgmisena teeb wordpress andmebaasi ja muudab wordpress config faili selle alusel.
@@ -40,5 +40,5 @@ andmebaasi kasutaja:        "wordpressuser"
 andmebaasi kasutaja parool: "qwerty"
 ```
 ### Ligipääsemine
-- Wordpress asub lingil {serveri IP}/wordpress
-- Myphpadmin asub lingil {serveri IP}/myphpadmin
+- Wordpress asub lingil http://local-host/wordpress
+- Myphpadmin asub lingil http://local-host/phpmyadmin
