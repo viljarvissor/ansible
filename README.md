@@ -2,6 +2,7 @@
 ## Eesmärk
 Skriptid instaleerivad wordpressi Apache2 peale ja lisab juurde weel mysql serveri ja phpmyadmini
 #### github paigaldus
+Kõik siin on tehtud Debian 9 peal
 ##### Paigaldamine
 
 apt install git
