@@ -3,9 +3,9 @@
 Skript instaleerib wordpressi Apache2 peale ja lisab juurde weel mysql serveri ja phpmyadmini
 #### github paigaldus
 ##### Paigaldamine
-```
+
 apt install git
-```
+
 ##### Seadistamine
 ```
 git config --global user.name "Eesnimi Perenimi"
