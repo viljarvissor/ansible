@@ -1,7 +1,7 @@
 ---
 - hosts: webservers
   tasks:
-    - name: instaleerime php7.0
+    - name: instaleerime  php7.0
       apt: name=php7.0 update_cache=yes state=latest
     - name: instaleerime libapache2-mod-php7.0
       apt: name=libapache2-mod-php7.0 update_cache=yes state=latest
